@@ -2,6 +2,18 @@
 
 A pure-black, OLED-friendly Zed theme inspired by vaporwave. Marine teal primary, vibrant green-cyan accents, hot pink highlights, soft gray text. A Zed port of [opencode-vaporware-oled-theme](https://github.com/mcdays94/opencode-vaporware-oled-theme) so the two editors share the same color vocabulary.
 
+<p align="center">
+  <img src="images/showcase.png" alt="Mdias OLED showcase: TypeScript code on the left, rendered markdown preview on the right, pure black background" width="100%" />
+</p>
+
+## Markdown side-by-side
+
+Source on the left, rendered preview on the right. Hot pink headings, italic emphasis, marine teal code spans.
+
+<p align="center">
+  <img src="images/markdown.png" alt="Mdias OLED rendering a markdown file with source and preview panes side-by-side" width="100%" />
+</p>
+
 ## Palette
 
 | Role | Color | Hex |
@@ -16,29 +28,31 @@ A pure-black, OLED-friendly Zed theme inspired by vaporwave. Marine teal primary
 | Functions, tags, attributes | Blue | `#61afef` |
 | Properties, variables, errors, diff removed | Soft red | `#e06c75` |
 
-The hot pink is the signature: it appears anywhere Zed flags something worth your attention. Search matches, git-modified files, numbers and booleans in code, markdown headings, warnings, the version-control modified marker. Comments render in italic gray for a vaporwave feel.
+The hot pink is the signature. It appears anywhere Zed flags something worth your attention: search matches, git-modified files, numbers and booleans in code, markdown headings, warnings, the version-control modified marker. Comments render in italic gray for a vaporwave feel.
 
 ## Installation
 
-### Direct install (before publishing to the marketplace)
+### Via the Zed extension marketplace
 
-1. Clone this repo somewhere stable:
+`cmd-shift-x` to open the extensions panel and search for **Mdias OLED**.
+
+### Direct install (development)
+
+1. Clone this repo:
 
    ```bash
    git clone https://github.com/mcdays94/zed-vaporware-oled-theme.git
    cd zed-vaporware-oled-theme
    ```
 
-2. Symlink the theme file into your Zed user themes directory:
+2. Symlink the theme into your Zed user themes directory:
 
    ```bash
    mkdir -p ~/.config/zed/themes
    ln -s "$(pwd)/themes/mdias-oled.json" ~/.config/zed/themes/mdias-oled.json
    ```
 
-   (A plain `cp` works too. The symlink is just so theme edits are live.)
-
-3. Pick the theme with `cmd-k cmd-t` and choose **Mdias OLED**, or set it in `~/.config/zed/settings.json`:
+3. Pick it with `cmd-k cmd-t` and choose **Mdias OLED**, or set it in `~/.config/zed/settings.json`:
 
    ```json
    {
@@ -51,13 +65,9 @@ The hot pink is the signature: it appears anywhere Zed flags something worth you
 
 Zed reloads themes on save, so any edits to `themes/mdias-oled.json` show up instantly.
 
-### Via the Zed extension marketplace
-
-Not published yet. Once submitted to [zed-industries/extensions](https://github.com/zed-industries/extensions), install via `cmd-shift-x` and search for "Mdias OLED".
-
 ## Companion theme
 
-This is the Zed counterpart to [mcdays94/opencode-vaporware-oled-theme](https://github.com/mcdays94/opencode-vaporware-oled-theme). Same palette, same vibe. Run them together for a consistent look across your terminal AI workflow (opencode) and your editor (Zed).
+The Zed counterpart to [mcdays94/opencode-vaporware-oled-theme](https://github.com/mcdays94/opencode-vaporware-oled-theme). Same palette, same vibe. Run them together for a consistent look across your terminal AI workflow (opencode) and your editor (Zed).
 
 ## Inspiration
 
